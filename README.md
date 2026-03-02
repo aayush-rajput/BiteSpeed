@@ -1,6 +1,6 @@
 # BiteSpeed Identity Reconciliation API
 
-A backend service built with Node.js, Express, TypeScript, and Prisma (SQLite) that handles cross-device identity reconciliation.
+Backend API for Identity Reconciliation task (Bitespeed Backend Assignment). Built using Node.js, Express, TypeScript, and Prisma (with PostgreSQL).
 
 ## Features
 - The `/identify` endpoint links disparate customer events (coming from different devices or channels) into a unified identity profile. 
@@ -22,7 +22,7 @@ A backend service built with Node.js, Express, TypeScript, and Prisma (SQLite) t
    ```
 
 2. **Initialize the Database**  
-   This project uses a local SQLite database (`dev.db`). Run this command to apply the Prisma schema:
+   Configure your PostgreSQL database URL in `.env`. Run this command to apply the Prisma schema:
    ```bash
    npx prisma db push
    ```
